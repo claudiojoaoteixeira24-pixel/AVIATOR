@@ -1,0 +1,70 @@
+import { PlatformConfig, StrategyConfig } from '../types';
+
+export const PLATFORMS: Record<string, PlatformConfig> = {
+  premierbet: {
+    id: 'premierbet',
+    name: 'PremierBet AO',
+    badge: 'PremierBet Angola',
+    logo: '🔴 PremierBet',
+    color: '#E53E3E',
+    bgGradient: 'from-red-600 to-rose-900',
+    url: 'https://www.premierbet.co.ao',
+    aviatorDirectUrl: 'https://www.premierbet.co.ao/casino/game/spribe-aviator',
+    description: 'Servidor dedicado PremierBet Angola - Sincronização em nuvem via SHA256.',
+    cloudSyncLatencyMs: 14,
+  },
+  elephantbet: {
+    id: 'elephantbet',
+    name: 'ElephantBet AO',
+    badge: 'ElephantBet Angola',
+    logo: '🐘 ElephantBet',
+    color: '#319795',
+    bgGradient: 'from-emerald-600 to-teal-900',
+    url: 'https://elephantbet.co.ao',
+    aviatorDirectUrl: 'https://elephantbet.co.ao/casino/games/aviator',
+    description: 'Servidor dedicado ElephantBet Angola - Monitoramento continuo de volatilidade.',
+    cloudSyncLatencyMs: 18,
+  },
+  bantubet: {
+    id: 'bantubet',
+    name: 'BantuBet AO',
+    badge: 'BantuBet Angola',
+    logo: '🦁 BantuBet',
+    color: '#DD6B20',
+    bgGradient: 'from-orange-600 to-amber-900',
+    url: 'https://www.bantubet.co.ao',
+    aviatorDirectUrl: 'https://www.bantubet.co.ao/casino/game/aviator',
+    description: 'Servidor dedicado BantuBet Angola - Algoritmo preditivo de padrões rosa e roxo.',
+    cloudSyncLatencyMs: 12,
+  },
+};
+
+export const STRATEGIES: StrategyConfig[] = [
+  {
+    id: 'conservative',
+    name: 'Conservador (Alta Segurança)',
+    targetRange: '1.50x - 2.00x',
+    minTarget: 1.5,
+    maxTarget: 2.0,
+    minConfidence: 97,
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+  },
+  {
+    id: 'moderate',
+    name: 'Moderado (Recomendado)',
+    targetRange: '2.00x - 4.50x',
+    minTarget: 2.0,
+    maxTarget: 4.5,
+    minConfidence: 94,
+    badgeColor: 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+  },
+  {
+    id: 'pink_hunter',
+    name: 'Caçador de Rosa (Multiplicadores Altos)',
+    targetRange: '10.00x - 50.00x+',
+    minTarget: 10.0,
+    maxTarget: 50.0,
+    minConfidence: 89,
+    badgeColor: 'bg-fuchsia-500/20 text-fuchsia-400 border-fuchsia-500/30',
+  },
+];

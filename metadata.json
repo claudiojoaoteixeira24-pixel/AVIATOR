@@ -1,0 +1,6 @@
+{
+  "name": "Aviator Signals AO",
+  "description": "Análise preditiva de sinais em tempo real para Aviator com integração Premierbet AO, ElephantBet AO e BantuBet AO em tela dupla.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
